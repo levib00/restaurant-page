@@ -1,0 +1,68 @@
+@font-face {
+    font-family: journal;
+    src: url(../fonts/journal-webfont.woff);
+}
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/engels_burnt_orange_orange_brick-1024x640.jpg');
+}
+#heading {
+    color:#fff;
+    font-family: journal, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 15px;
+}
+#flex-hor-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#content {
+    background-color:crimson;
+    padding: 0 50px 0 50px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: sans-serif;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    border-radius: 3px;
+    box-shadow: black 0px 0px 8px -1px;
+}
+#main-pic {
+    width: 820px;
+}
+#paragraph {
+    color: #fff;
+    margin: 0;
+    padding: 0 40px 30px 40px;
+    
+}
+#hero-header {
+    display: flex;
+    justify-content: center;
+}
+#button-container {
+    list-style: none;
+    display: flex;
+    margin: 2px 0 2px 0;
+    gap: 3px;
+}
+.button {
+    height: 50px;
+    width: 80px;
+    appearance: none;
+    border: 1px black solid;
+    border-radius: 8px;
+    background-color: crimson;
+    font-size: 1.1rem;
+    color: #fff;
+    box-shadow: black 0px -2px 8px -1px;
+}
