@@ -1,3 +1,4 @@
+/*always on*/
 @font-face {
     font-family: journal;
     src: url(../fonts/journal-webfont.woff);
@@ -11,39 +12,6 @@ html {
 }
 body{
     background-image: url('../images/engels_burnt_orange_orange_brick-1024x640.jpg');
-}
-#heading {
-    color:#fff;
-    font-family: journal, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    padding: 15px;
-}
-#flex-hor-center {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#content {
-    background-color:crimson;
-    padding: 0 50px 0 50px;
-    font-size: 1.3rem;
-    color: #fff;
-    font-family: sans-serif;
-    width: 900px;
-    margin: 0 auto 0 auto;
-    border-radius: 3px;
-    box-shadow: black 0px 0px 8px -1px;
-}
-#main-pic {
-    width: 820px;
-}
-#paragraph {
-    color: #fff;
-    margin: 0;
-    padding: 0 40px 30px 40px;
-    
 }
 #hero-header {
     display: flex;
@@ -65,4 +33,59 @@ body{
     font-size: 1.1rem;
     color: #fff;
     box-shadow: black 0px -2px 8px -1px;
+}
+.button:hover {
+    cursor: pointer;
+}
+#heading {
+    color:#fff;
+    font-family: journal, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 15px;
+}
+.flex-hor-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#content {
+    background-color:crimson;
+    padding: 0 50px 0 50px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: sans-serif;
+    width: 900px;
+    margin: 0 auto 50px auto;
+    border-radius: 3px;
+    box-shadow: black 0px 0px 8px -1px;
+}
+/* Home page*/
+#main-pic {
+    width: 820px;
+}
+#paragraph {
+    color: #fff;
+    margin: 0;
+    padding: 0 40px 30px 40px;
+    
+}
+/*Menu page*/
+#sub-heading {
+    margin-bottom: 44px;
+}
+#menu-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-around;
+}
+.menu-image {
+    height: 240px;
+    width: 360px;
+}
+.menu-item > p {
+    margin: -10px 0;
+    width: 80%;
 }

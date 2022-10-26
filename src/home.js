@@ -1,12 +1,10 @@
 const generateHomePage = () => {
-    
-
     const heading = document.createElement('h1');
-    heading.textContent =  'Pepe\'s Pizza';
+    heading.textContent = 'Pepe\'s Pizza';
     heading.setAttribute('id','heading')
 
     const homeContent = document.createElement('div')
-    homeContent.setAttribute('id','flex-hor-center')
+    homeContent.setAttribute('class','flex-hor-center')
 
     const content = document.getElementById('content')
 
@@ -24,6 +22,8 @@ const generateHomePage = () => {
     paragraph.setAttribute('id','paragraph')
     paragraph.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elementum turpis. Sed fringilla lacus sed massa interdum congue. Pellentesque dui arcu, accumsan in aliquet nec, facilisis at magna.'
     
+    const homeButton = document.getElementById('home');
+    homeButton.setAttribute('style', 'background-color:#be4403')
 
     homeContent.appendChild(mainPic)
     homeContent.appendChild(mainCaption)
