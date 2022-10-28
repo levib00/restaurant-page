@@ -121,6 +121,9 @@ const generateMenuPage = () => {
     const menuPrice6 = document.createElement('h5');
     menuPrice6.innerText = '$17.99 + $1.00 per topping';
     menuItem6.appendChild(menuPrice6)
+
+    const menuButton = document.getElementById('menu');
+    menuButton.setAttribute('style', 'background-color: #8c0c26')
     
 };
 export default generateMenuPage();

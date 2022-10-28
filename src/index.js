@@ -1,4 +1,4 @@
 //import generateHomePage from './home'
 //generateHomePage
-import generateMenuPage from "./menu";
-generateMenuPage
+import generateContactPage from "./contact.js";
+generateContactPage
