@@ -1,4 +1,5 @@
 /*always on*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @font-face {
     font-family: journal;
     src: url(../fonts/journal-webfont.woff);
@@ -12,6 +13,7 @@ html {
 }
 body{
     background-image: url('../images/engels_burnt_orange_orange_brick-1024x640.jpg');
+    font-family:'Roboto', sans-serif;
 }
 #hero-header {
     display: flex;
@@ -24,14 +26,15 @@ body{
     gap: 3px;
 }
 .button {
+    color: #fff;
     height: 50px;
     width: 80px;
     appearance: none;
-    border: 1px black solid;
+    border: 2px black solid;
     border-radius: 8px;
     background-color: crimson;
     font-size: 1.1rem;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
     box-shadow: black 0px -2px 8px -1px;
 }
 .button:hover {
@@ -55,13 +58,12 @@ body{
     padding: 0 50px 0 50px;
     font-size: 1.3rem;
     color: #fff;
-    font-family: sans-serif;
     width: 900px;
     margin: 0 auto 50px auto;
     border-radius: 3px;
     box-shadow: black 0px 0px 8px -1px;
 }
-/* Home page*/
+/*Home page*/
 #main-pic {
     width: 820px;
 }
@@ -69,7 +71,6 @@ body{
     color: #fff;
     margin: 0;
     padding: 0 40px 30px 40px;
-    
 }
 /*Menu page*/
 #sub-heading {
@@ -88,4 +89,23 @@ body{
 .menu-item > p {
     margin: -10px 0;
     width: 80%;
+}
+/*Contact Page*/
+#contact-card {
+    
+    box-sizing: border-box;
+    width: 400px;
+    height: 250px;
+    background-color: #bb1032;
+    border:  #8c0c26 10px solid ;
+    margin-bottom: 170px;
+    padding: 20px;
+    font: 400;
+}
+#contact-card > div {
+    margin: 10px 0 15px 0;
+    ;
+}
+#hours-section {
+    margin: 40px 0 15px 0;
 }
