@@ -1,24 +1,22 @@
-const generateMenuPage = () => {
-    const heading = document.createElement('h1');
-    heading.textContent = 'Pepe\'s Pizza';
-    heading.setAttribute('id','heading');
+export default function generateMenuPage() {
 
-    const homeContent = document.createElement('div');
-    homeContent.setAttribute('class','flex-hor-center');
+    const menuContent = document.createElement('div');
+    menuContent.setAttribute('class','flex-hor-center');
+    menuContent.setAttribute('id','menu-content')
 
     const content = document.getElementById('content');
 
     content.appendChild(heading);
-    content.appendChild(homeContent);
+    content.appendChild(menuContent);
 
     const subHeading = document.createElement('h3');
     subHeading.textContent = "Menu";
     subHeading.setAttribute('id', 'sub-heading');
-    homeContent.appendChild(subHeading);
+    menuContent.appendChild(subHeading);
 
     const menuContainer = document.createElement('div');
     menuContainer.setAttribute('id','menu-container');
-    homeContent.appendChild(menuContainer)
+    menuContent.appendChild(menuContainer)
 
     const menuItem1 = document.createElement('div');
     menuItem1.setAttribute('class', 'menu-item flex-hor-center');
@@ -122,8 +120,6 @@ const generateMenuPage = () => {
     menuPrice6.innerText = '$17.99 + $1.00 per topping';
     menuItem6.appendChild(menuPrice6)
 
-    const menuButton = document.getElementById('menu');
-    menuButton.setAttribute('style', 'background-color: #8c0c26')
+    
     
 };
-export default generateMenuPage();

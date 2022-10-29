@@ -1,10 +1,13 @@
-const generateHomePage = () => {
-    const heading = document.createElement('h1');
-    heading.textContent = 'Pepe\'s Pizza';
-    heading.setAttribute('id','heading')
+export default function generateHomePage() {
 
     const homeContent = document.createElement('div')
     homeContent.setAttribute('class','flex-hor-center')
+    homeContent.setAttribute('id','home-content')
+
+    const subHeading = document.createElement('h3');
+    subHeading.textContent = "Home";
+    subHeading.setAttribute('id', 'sub-heading');
+    homeContent.appendChild(subHeading);
 
     const content = document.getElementById('content')
 
@@ -21,12 +24,8 @@ const generateHomePage = () => {
     const paragraph = document.createElement('p');
     paragraph.setAttribute('id','paragraph')
     paragraph.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elementum turpis. Sed fringilla lacus sed massa interdum congue. Pellentesque dui arcu, accumsan in aliquet nec, facilisis at magna.'
-    
-    const homeButton = document.getElementById('home');
-    homeButton.setAttribute('style', 'background-color:#8c0c26')
 
     homeContent.appendChild(mainPic)
     homeContent.appendChild(mainCaption)
     homeContent.appendChild(paragraph)
 };
-export default generateHomePage()
