@@ -10,6 +10,8 @@ html {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    margin-right: calc(-1 * (100vw - 100%));
+    overflow-x: hidden;
 }
 body{
     background-image: url('../images/engels_burnt_orange_orange_brick-1024x640.jpg');
